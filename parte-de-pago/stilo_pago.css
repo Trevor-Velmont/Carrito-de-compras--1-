@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Damion&family=La+Belle+Aurore&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald&family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@100&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  background-color: #0769e9;
+  height: 80px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+  margin-top: 8px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: #034574;
+  transition: 0.5s;
+}
+
+.hamburguesa {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+body {
+  background: rgb(238, 238, 238);
+}
+
+h1 {
+  margin-left: 550px;
+  margin-top: 20px;
+}
+
+#contenedor {
+  background: rgb(255, 255, 255);
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+#contenedor {
+  margin-left: 250px;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 850px;
+  padding: 15px 35px;
+}
+
+#contenedor .form-label {
+  display: block;
+  color: #1b82ff;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.contenedor2 {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  /* Organiza los elementos en fila */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+}
+
+.par {
+  flex: 2;
+  /* Hace que cada par ocupe el mismo espacio horizontal */
+  margin-right: 1px;
+  /* Agrega un espacio entre cada par */
+  margin-bottom: 1px;
+  /* Agrega espacio vertical entre cada par */
+}
+
+label{
+  margin-top:10px;
+}
+
+label {
+  color: #1b82ff;
+  display: block;
+  /* Establece el label como bloque para que esté arriba del input */
+}
+
+.contexto {
+  font-size: 11px;
+}
+
+.cursor_bloqueo {
+  cursor: not-allowed;
+}
+
+
+.cursor_desbloqueo{
+ cursor: text; 
+}
+
+#bloq1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input {
+  font-size: 13px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 1px solid #bfbfbf;
+}
+
+select {
+  font-size: 13px;
+  padding: 10px 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+}
+
+#span {
+  color: #1b82ff;
+  margin-left: 4px;
+}
+
+.boton button{
+  font-size: 16px;
+  padding: 15px 15px;
+  border-radius: 6px;
+  background: #1b82ff;
+  border: none;
+  color: white;
+  margin-top: 15px;
+  margin-left: 600px;
+  cursor: pointer;
+}
+
+.boton2 button a{
+  font-size: 16px;
+  padding: 15px 15px;
+  border-radius: 6px;
+  background: #ff0000;
+  border: none;
+  color: white;
+  margin-top: -70px;
+  margin-left: 100px;
+  position: absolute;
+  cursor: pointer;
+}
+
+textarea{
+  width: 764px;
+  height: 50px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+}
+
+textarea::placeholder {
+  text-align: left;
+  padding-left: 4px; 
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+/*color de fondo rgb(238, 238, 238)   color de form rgb(255, 255, 255)*/

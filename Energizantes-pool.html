@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="hidden">
+    <div class="centro" id="cargar">
+    <div class="lds-dual-ring"></div>
+    </div>
+
+    <header class="header" >
+        <nav class="nav">
+            <div class="logo nav-link">
+                <img src="Imagenes_menu/distriliquidos.png" alt="" srcset="" width="70px">
+            </div>
+            <button class="hamburguesa" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="catalogo.html" class="nav-menu-link nav-link">Catálogo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="Quienes-somos.html" class="nav-menu-link nav-link">¿Quienes Somos?</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping melo"></i></a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#"><i class="fa-solid fa-user melo"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="contenedor">
+
+        <div id="header2">
+            <ul class="nav2">
+                <li><a href="Coca-cola.html">Coca Cola</a>
+                <ul>
+                    <li><a href="Aguas.html">Aguas</a>
+                    <li><a href="Energizantes.html">Energizantes</a>
+                    <li><a href="Gaseosas-De-Sabor.html">Saborisadas</a>
+                    <li><a href="Hidratantes.html">Hidratantes</a>
+                    <li><a href="Te.html">Te</a>
+                    <li><a href="Jugos.html">Jugos</a>
+                </ul>
+                </li>
+
+                <li><a href="Pool.html">Pool</a>
+                    <ul>
+                        <li><a href="Aguas-pool.html">Aguas</a>
+                        <li><a href="Energizantes-pool.html">Energizantes</a>
+                        <li><a href="Agua-saborizada.html">Agua saborizada</a>
+                        <li><a href="Hidratantes-pool.html">Hidratantes</a>
+                        <li><a href="Jugos-pool.html">Jugos</a>
+    
+    
+                    </ul>
+                </li>
+
+                <li><a href="Postobon.html">Postobon</a>
+                    <ul>
+                      <li><a href="Cerveza.html">Cervezas</a>
+                      <li><a href="Agua-postobon.html">Aguas</a>
+
+                    </ul>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+
+        <!---A continuación el contenedor del catalogo-->
+        <div class="contenedor-items">
+            <div class="items">
+                <span class="titulo-item">Box EngassesLx1und</span>
+                <img src="Pool/energizantes/Energy.png" alt="" class="img-item">
+                <span class="precio-item">5.000</span>
+                
+                <button onclick="agregarCarrito('Energy', 'Pool/energizantes/Energy.png')" class="boton-item" id="boton">Agregar al carrito</button>
+                
+                
+            </div>
+            
+            
+
+
+          
+        </div>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---A continuación el contenedor del carrito de compras-->
+       <!---- <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+            <div class="carrito-items">
+                <div class="carrito-item">
+                    <img src="./bebidas/gaseosas/canada dry ginger ale pet 1.5lx1und.png" alt="" width="100px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Canada dry ginger ale pet 1.5lx1und</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <div class="carrito-item-precio">$30.000</div>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+
+                <div class="carrito-item">
+                    <img src="./bebidas/gaseosas/Gaseosa Colombiana Cero Calorías Pet 400ml x4und.png" alt="" width="100px">
+
+
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Gaseosa Colombiana Cero Calorías Pet 1.5Lx1und</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <div class="carrito-item-precio">$40.000</div>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu total</strong>
+                    <span class="carrito-precio-total">
+                        $0,00
+                    </span>
+                </div>
+                <button class="btn-pagar">
+                    Pagar
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </div>
+    -->
+    </section>
+
+    <footer class='footer'>
+        <div class="container">
+            <div class="footer-X">
+                <div class="footer-links">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="#">DistriliquidosSAS@gmail.com</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Operador En Linea</a></li>
+    
+    
+                    </ul>
+    
+                </div>
+                <div class="footer-links">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Terminos & Condiciones</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                        <li><a href="#">Estatus De Orden</a></li>
+    
+    
+                    </ul>
+    
+                </div>
+                <div class="footer-links">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    
+    
+    
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+       
+    </footer>
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="menu.js"></script>
+
+</html>

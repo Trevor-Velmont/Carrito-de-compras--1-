@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="hidden">
+    <div class="centro" id="cargar">
+    <div class="lds-dual-ring"></div>
+    </div>
+
+    <header class="header" >
+        <nav class="nav">
+            <div class="logo nav-link">
+                <img src="Imagenes_menu/distriliquidos.png" alt="" srcset="" width="70px">
+            </div>
+            <button class="hamburguesa" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="catalogo.html" class="nav-menu-link nav-link">Catálogo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">¿Quienes Somos?</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./carrito.html"><i class="fa-solid fa-cart-shopping melo"></i></a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#"><i class="fa-solid fa-user melo"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <br><br><br><br><br>
+        <div class="contenedor2">
+            <form class="form2">
+       
+        <h1 onclick="Somos()" id="h1">¿Quienes Somos?</h1><br>
+            <p id="pov"></p>
+    
+        <br><br><br><br>
+     
+        <h1 id="h2">Mision</h1><br>
+                <p id="pov2"></p>
+        <br><br><br><br>
+      
+        <h1 id="h3">Vision</h1><br>
+                <p id="pov3"></p>
+            </form>
+        </div>
+    </body>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="menu.js"></script>
+</html>
