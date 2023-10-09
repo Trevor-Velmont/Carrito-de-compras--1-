@@ -22,26 +22,26 @@ $tipo_de_calle = $_POST['tipo_de_calle'];
 $avenida = $_POST['avenida'];
 $referencia = $_POST['referencia'];
 
-// Verificar si el checkbox está marcado
-if (!isset($_POST['checkbox'])) {
-    $bloq1 = $_POST['bloq1'];
-    $bloq2 = $_POST['bloq2'];
-} else {
-    $bloq1 = null;
-    $bloq2 = null;
-}
+// Verificar si los valores de bloq1 y bloq2 están definidos en $_POST
+$bloq1 = isset($_POST['bloq1']) ? $_POST['bloq1'] : null;
+$bloq2 = isset($_POST['bloq2']) ? $_POST['bloq2'] : null;
 
 // Preparar la consulta SQL para insertar datos en la tabla
 $sql = "INSERT INTO direcciones (Nombre, Celular, Correo, Barrio, Tipo, Tipo_nombre, Numero1, Numero2, Referencias) 
         VALUES ('$nombre_apellido', '$celular', '$correo', '$barrio', '$tipo_de_calle', '$avenida', '$bloq1', '$bloq2', '$referencia')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Datos guardados exitosamente.";
+    $response = "Datos guardados exitosamente.";
 } else {
-    echo "Error al guardar los datos: " . $conn->error;
+    $response = "Error al guardar los datos: " . $conn->error;
 }
 
 // Cerrar la conexión a la base de datos
 $conn->close();
-?>
 
+// Enviar la respuesta como una alerta en JavaScript
+echo "<script>alert('$response');</script>";
+
+// Redireccionar de vuelta al formulario
+echo "<script>window.location.href = 'pago.html';</script>";
+?>
